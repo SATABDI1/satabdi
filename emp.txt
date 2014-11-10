@@ -1,0 +1,7 @@
+emp01 satabdi 20000
+emp02 sweta 12000
+emp03 ruchi 18000
+emp08 sakshi 16000
+emp10 supi 40000
+emp01 satabdi 20000
+emp02 sweta 12000

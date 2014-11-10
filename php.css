@@ -1,0 +1,17 @@
+<html>
+	<head>
+	<title>untitled</title>
+	
+	<line ref="stylesheet" href="php.css"></line>
+</head>
+
+<body>
+	<p>
+		<?php
+		$name="satabdi";
+		echo("Hello",$name);
+		?>
+		</p>
+</body>
+
+</html>

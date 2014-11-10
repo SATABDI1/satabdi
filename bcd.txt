@@ -1,0 +1,10 @@
+#!/bin/sh
+echo "Hello"
+VAR_1=Hello
+VAR_2=sweta
+echo "$VAR_1 $VAR_2"
+#!/bin/bash
+echo "Enter the bcd.txt: "
+read bcd.txt
+echo "Printing head of $bcd.txt..."
+head $bcd.txt

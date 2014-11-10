@@ -1,0 +1,204 @@
+1. Put "God Mode" in easy reach
+
+You wouldn't know it by looking at the Desktop or Start screen, but Windows 8 practically bristles with settings you can customize. The problem is that they're scattered throughout Windows 8, and it can be time-consuming to track them down individually.
+
+However, there is one way to find them all in one place: You can use what some people call "God Mode." While the term "God Mode" has a powerful ring to it, the truth is it's not a separate mode that you put Windows into. It's really a hidden folder that gives you fast access to many settings spread out across Windows 8. It's easy to put that folder right on the Desktop.
+
+First, make sure that you can view hidden files in File Explorer, the system navigation app that in earlier versions of Windows was called Windows Explorer. Run File Explorer, click the View tab, and check the boxes next to "Hidden items" and "File name extensions" in the Ribbon at the top.
+
+Then right-click the Desktop and select New --> Folder. That creates a folder on the Desktop named "New folder." Rename the folder:
+
+GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+GodMode icon The GodMode folder on the Desktop.
+
+The folder icon changes, and it has the name GodMode.
+
+(Note that the "GodMode" text isn't what turns the folder into a special folder; instead, it's that long string of letters and numbers inside the curly brackets. You can use any text you want before the period just ahead of the opening bracket, and it still points to the same folder and everything works the same.)
+
+Double-click the icon, and you'll launch a folder filled with dozens of actions, tools and tweaks, from "Change Automatic Maintenance settings" to "View update history." They're organized by category. Expand or shrink each category by clicking the small triangle next to it. Each category displays a number next to it, showing how many settings there are in it.
+the God Mode folder with options
+
+"God Mode" offers a plethora of settings and actions. Click to view larger image.
+What Readers Like
+
+    5 questions to ask before you take a tech job
+    11 must-have JavaScript tools for Web developers
+    scarlett johansson naked selfie
+    Naked celebs: Hackers download sext selfies from iCloud
+
+To start any action or tweak, double-click it in the list. In some cases you'll follow a wizard, in other cases you'll need to fill in dialog boxes, and in yet other cases you'll be sent to the Control Panel or another Windows location to do the work.
+
+2. Put a quick-and-dirty Start menu on the taskbar
+
+Particularly high on the list of things that annoy people about Windows 8 is the omission of the Desktop's Start menu. Microsoft did its best to stomp it to death -- but it didn't quite succeed. In the Windows 8 cheat sheet I showed you how to use free or paid add-on programs to get the Start button and menu back.
+
+If don't want to use third-party software to get a Start menu, you can build your own quick-and-dirty one in no time. You won't get the full traditional Windows Start menu with Search button, recently run apps, the Control Panel, your network and so on. Instead you get a menu that lets you browse through applications and launch them.
+
+First make sure that you can view hidden files in File Explorer, as outlined in the tip above.
+
+Now right-click the Desktop's taskbar and select Toolbars --> New Toolbar. From the screen that appears, navigate to
+
+C:\Users\<i>username</i>\AppData\Roaming\Microsoft\Windows\Start Menu
+
+where username is your account name, and click the Select Folder button. That will place a Start Menu toolbar on the far right of the taskbar. Click its double arrow to display a variety of folders (such as Programs and Computer) that you can browse through until you see the item you want; click it to launch it.
+start menu approximation
+
+Here's your quick-and-dirty Start menu. Click to view larger image.
+Popular Resources
+
+    White Paper
+    The Importance of Managing Privileged Accounts
+    Video/Webcast
+    Sponsored
+    Office 365 and Dell Services: Productivity and ROI for SMBs
+
+See All
+
+To make the Start Menu toolbar go away, right-click the taskbar and select Toolbars, then de-select the Start Menu listing.
+
+By the way, you may have noticed that when you right-click the taskbar and select Toolbars, there are other pre-built toolbars you can put on the taskbar. Here are your choices and what each does:
+
+Address: Adds a box on the Taskbar into which you type URLs. After you enter one, press Enter and you'll head to the site in Internet Explorer.
+
+Links: Displays your Internet Explorer favorites on the Taskbar.
+
+Touch Keyboard: Displays a keyboard icon on the Taskbar. Click it to display an onscreen keyboard.
+
+Desktop: Displays a list of every icon on your Desktop. It even displays some items that aren't visible on the Desktop, such as Homegroup. For any item with a subfolder beneath it (such as Homegroup and Network), you'll see an arrow next to it. Move your cursor to the arrow to see all of the subfolders beneath it.
+
+To turn off any toolbar, right-click the taskbar and choose Toolbars, then uncheck the toolbar.
+
+3. Use and hack the Power User menu
+
+Microsoft giveth and Microsoft taketh away. In Windows 8 it took away the Start menu, but it also provided a very useful new tool: the Power User menu. Right-click in the lower-left corner of the Desktop (or press the Windows key + X) and up pops a text-based menu that gives you access to 16 tools, including a Run box, a command prompt, an administrative command prompt, the Device Manager and plenty of other useful power tools.
+Power User menuWindows 8's new Power User menu.
+
+Most choices are self-explanatory, but not all. For example, click "Programs and Features" and you get sent to a Control Panel applet that lets you uninstall Desktop programs, look at Windows updates you've installed and turn certain Windows features on or off.
+
+The Mobility Center sends you to an applet that lets you do things such as change your display brightness, screen orientation, presentation settings and so on. And in case you didn't realize that the Control Panel still existed, there's a link to that as well.
+
+Another nice thing about the Power User menu: It's hackable. You can delete items you don't want to appear there and add items you do want to appear there, such as programs you run frequently or even individual files.
+
+To do it, you'll first have to make sure that you can view hidden files in File Explorer, as outlined previously. Then go to
+
+C:\Users\<i>username</i>\AppData\Local\Microsoft\Windows\WinX
+
+where username is your account name. You'll see three folders there: Group1, Group2 and Group3. Each has shortcuts to the apps that appear on the Power Menu. Group1 contains the Desktop; Group2 contains the Control Panel, File Explorer, Run, Search and Task Manager; and Group3 contains two for the Command Prompt (one of which is an Admin command prompt), Computer Management, Device Manager, Disk Management, Event Viewer, Power Options, Programs and Features, System and Windows Mobility Center.
+shortcuts in WinX folder
+
+These shortcuts show up as menu items on the Power User menu.
+Click to view larger image.
+
+Look back at the Power User menu. Notice that there are three groups separated by two faint lines? They correspond to the folders in the WinX folder. The app in Group1 (Desktop) is at the bottom, then there's a line, then there are the apps in Group2, then there's a line, and then there are the apps in Group3.
+
+To edit the Power User menu, just make changes to the contents of the folders Group1, Group2 and Group3. Delete a shortcut and it vanishes from the menu; add a shortcut and it appears on the menu.
+
+Delete a shortcut as you would any other shortcut: Select it and press your Delete key. (When you delete a shortcut, the file it points to isn't deleted; only the shortcut goes away.) To add a shortcut, open the folder into which you want to place it, right-click on an empty spot, select New --> Shortcut, and follow the wizard that appears.
+
+After you've finished deleting shortcuts and adding new ones, sign out of Windows and then sign back in. Your new Power User menu will be waiting for you on your return.
+
+4. Customize the lock screen
+
+When you boot up your PC or wake it from sleep, it heads right to Windows 8's lock screen. Along with a large image, the screen displays the time and date as well as notifications and status updates from certain apps -- email, social networks, calendar and more. It provides a quick rundown on things you might be interested in seeing without having to sign into Windows 8. Just wake up your Windows 8 device and the info is there, waiting for you on the lock screen.
+
+By default, the lock screen shows notifications from the Messaging, Mail, Calendar and Weather apps. But maybe you'd like to see Twitter updates or info from another app, or you'd like to change the image. You can easily customize all that.
+
+The place to go to do it is the Lock screen settings screen. To get there, press the Windows key + C to display the Charms bar, and then select the Settings icon. Click "Change PC settings" at the bottom of the Settings pane. The "PC settings" screen appears. Under Personalize, choose "Lock screen."
+
+You'll see your lock screen image at the top of the screen. Just beneath the image are other images you can use. Click one to make it the new lock screen image. To find other images you can use for the lock screen, click the Browse button and browse through your pictures. Select the one you want to use and click the "Choose picture" button to make it your new lock screen image.
+lock screen settings screen
+
+Here's command central for changing your lock screen settings, starting with the image.
+Click to view larger image.
+
+Just below the image on the Lock screen settings screen is the "Lock screen apps" section. Here you'll find icons for the apps that automatically display notifications and updates on your lock screen.
+changing lock screen appsClick a plus sign and choose an app to display alerts and notifications on the lock screen.
+
+Over to the right of them are several plus signs. Click a plus sign and you'll see a list of apps that can display notifications and updates. Pick one and it will display alerts and other information on the lock screen.
+
+Note that when you click a plus sign, you'll see both the apps that are already displaying notifications and alerts on your lock screen as well as those that aren't currently doing so. If you choose one that already displays its notifications on the Start screen, nothing new happens -- the app still displays notifications, with no change. To stop an app from displaying notifications, click it and then click "Don't show quick status here."
+
+Underneath that section is one that's a little more baffling: "Choose an app to display detailed status." The app in this section displays more information on the lock screen than other apps.
+lock screen with detailed calendar infoHere's the Lock screen showing detailed information from the Calendar app.
+
+Only the Calendar app and the Weather app can show this kind of detailed information, and only one at a time. To change from one to the other, click the icon that's there and select the other icon. From then on, that app will show its detailed status.
+
+If you want neither app to show detailed status, click the icon and select "Don't show detailed status on the lock screen." Neither app shows detailed information, and the icon changes to a plus sign. If you want to reinstate detailed weather or calendar information, click the plus sign and select either app.
+1 2 3 Next next
+Editors' Picks
+
+    Moto X
+    Trying out the new Moto X -- is bigger necessarily better?
+    Navigating a field of uncertainty and doubt.
+    Should you buy enterprise applications from a startup?
+    Microsoft StorSimple storage units.
+    Microsoft's StorSimple: A first look at the 8000 series
+    11 must-have JavaScript tools for Web developers
+    Video/Webcast
+    Sponsored
+    Collaboration 2.0: Death of the Web Conference (As We Know It)
+
+    You spend a third of your working life in meetings, and most of that is time wasted. Tune into this
+    White Paper
+    10 Ways to Build a Better Big Data Security Strategy
+
+Join the discussion
+Be the first to comment on this article. Our Commenting Policies
+Login
+
+0 Comments
+
+    Subscribe
+    RSS
+
+What Readers Like
+5 questions to ask before you take a tech job
+
+IT positions don't always match up to their interview hype. Ask these questions to ensure you know what
+
+    11 must-have JavaScript tools for Web developers
+    scarlett johansson naked selfie
+    Naked celebs: Hackers download sext selfies from iCloud
+
+Newsletters
+Sign up and receive the latest news, reviews and trends on your favorite technology topics.
+
+Get our daily newsletter
+iphone 6 truth
+iPhone 6 release date ''soon'' -- rumors of features leak again
+
+Tim's kimono rent asunder: The iPhone 6 (and iWatch) "will" be unveiled tomorrow at the Flint Center in
+iPhone 6 / iPhone 6 Plus
+How to decide which iPhone 6 is right for you
+
+iPhone 6, or iPhone 6 Plus? It's a conundrum, and with pre-orders starting on Friday, you have to
+Popular Resources
+
+    Video/Webcast
+    Sponsored
+    Collaboration 2.0: Death of the Web Conference (As We Know It)
+    White Paper
+    10 Ways to Build a Better Big Data Security Strategy
+    White Paper
+    2013 Cyber Risk Report
+    White Paper
+    3 Big Data Security Analytics Techniques You Can Apply Now to Catch Advanced Persistent Threats
+    White Paper
+    8 Ways To Better Monitor Network Security Threats in the Age of BYOD
+
+Top Stories
+battery under microscrope
+For lithium-ion batteries to last, slow charging isn't the answer
+
+New research by a California-based team could change the way lithium-ion batteries are charged in
+Is the Apple Watch a breakout product?
+
+Analysts are divided over whether the Apple Watch will be a breakthrough product that takes
+european flag in karlskrona 2011
+Europe has a love/hate thing for U.S. tech
+
+European regulators never seem to miss a chance to crack down on U.S. tech companies, but their market
+bigquestionmark
+Technology jeopardy: Beat the odds of project failure
+
+The important question, which is rarely thought of, is ‘What do people need to do their best work?’
